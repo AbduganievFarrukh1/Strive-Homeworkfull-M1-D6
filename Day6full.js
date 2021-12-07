@@ -338,42 +338,19 @@ const searchByTitle = function (keyword) {
   }
   return result;
 };
-
-/* EXERCISE 19
-    Write a function called searchAndDivide which receives a string as a parameter and returns an object;
-    this object should contain an array called match, made by all the movies from the provided movies array which contain the given string in the title,
-    and another array unmatch with all the remaining ones.
-*/
-
-// const searchAndDivide = function (word) {
-//   let result = {
-//     match: [],
-//     unmatch: [],
-//   };
-//   for (let i = 0; i < movies.length; i++) {
-//     if (movies[i].Title.indexOf(word) !== -1) {
-//       result.match.push(movies[i]);
-//     } else {
-//       result.unmatch.push(movies[i]);
-//     }
-//   }
-//   return result;
-// };
-
 /* EXERCISE 20
    Write a function called "removeIndex" which receives a number as a parameter and returns the provided movies array without the element in the given position.
 */
 
-const removeIndex = function (index) {
-  let result = [];
-  for (let i = 0; i < movies.length; i++)
-   {
-    if (index !== i) {
-      result.push(movies[i]);
+function removeIndex(index) {
+    let result = [];
+    for (let i = 0; i < movies.length; i++) {
+        if (index !== i) {
+            result.push(movies[i]);
+        }
     }
-  }
-  return result;
-};
+    return result;
+}
 
 //or you could split the array from 0 to index and then from index + 1 to the end and then join them
 
