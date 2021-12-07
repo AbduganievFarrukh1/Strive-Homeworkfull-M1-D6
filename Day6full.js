@@ -205,7 +205,7 @@ const howManyDays = function(selectedDate) {
   return Math.floor((today - selectedInMilliseconds) / (1000 * 60 * 60 * 24))
 };
 
-let date = howManyDays(("6 Jun 1998"))
+let date = howManyDays(("6 Jun 2002"))
 
 console.log(date)
 
